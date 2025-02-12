@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "johns-fun-mod",
+	"version": "${version}",
+	"name": "Johns Fun Mod",
+	"description": "Johns Super Epic Awesome Mod!",
+	"authors": [
+		"John!"
+	],
+	"contact": {
+		"homepage": "https://john.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/johns-fun-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.john.johnsfunmod.JohnsFunMod"
+		],
+		"fabric-datagen": [
+			"net.john.johnsfunmod.JohnsFunModDataGenerator"
+		],
+		"client": [
+			"net.john.johnsfunmod.JohnsFunModClient"
+		]
+	},
+	"mixins": [
+		"johns-fun-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
